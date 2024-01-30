@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George and Millie are getting married</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="section section1">
+        <h1>George and Millie are getting married</h1>
+        <h2 class="date">Seventh of September Twenty Twenty Four</h2>
+        <a href="#section4" class="rsvp-btn">RSVP</a>
+    </div>
+    <div class="section section2">
+        <h2>Venue details</h2>
+        <div class="fade-in-section">
+            <div class="svg-item">
+                <img src="./assets/images/Church 2.svg" alt="Church icon" class="icon">
+                <p class="svg-text">Ceremony at St Mary of All Souls, NW6 4SN </p>
+            </div>
+            <div class="svg-item">
+                <img src="./assets/images/Priory Hall.svg" alt="Priory Hall icon" class="icon">
+                <p class="svg-text">Reception at Priory Hall, NW6 4SN</p>
+            </div>
+            <div class="svg-item">
+                <img src="./assets/images/Never For Ever 2.svg" alt="Never for Ever icon" class="icon">
+                <p class="svg-text">After party at Never For Ever, NW5 1TL</p>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="schedule">
+            <h2>Schedule</h2>
+            <p>12:30 - Guests arrive</p>
+            <p>13:00 - Ceremony</p>
+            <p>14:00 - Nibbles and Chat</p>
+            <p>16:00 - Wedding Breakfast</p>
+            <p>19:00 - Bus to the after party</p>
+            <p>20:00 - Smooth Sailors get the party started</p>
+            <p>00:00 - Carriages or Kebab</p>
+        </div>
+    </div>
+    <div class="section section4" id="section4">
+        <h2>RSVP</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_zuvtQd1olqYUluXg2MKEjPVYeazeJ2fjIxr-FXZLCCrvRw/viewform?embedded=true" width="640" height="1462" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const svgContainer = document.querySelector(".fade-in-section");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    console.log(entry, 'entry')
+                    if (entry.isIntersecting) {
+                        svgContainer.classList.add("is-visible");
+                    } else {
+                        svgContainer.classList.remove("is-visible");
+                    }
+                });
+            });
+
+            observer.observe(svgContainer);
+        });
+    </script>
+</body>
+</html>
