@@ -38,6 +38,21 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+.header {
+  min-height: auto;
+  height: 80px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
 .section1 {
     background-color: #FFFFFF;
     background-image: url('./assets/images/Eucalyptus 1.svg');
@@ -58,6 +73,10 @@ iframe {
     background-size: auto 50vh, auto 50vh;
 }
 .section4 {
+    background-color: #FFFFFF;
+    min-height: auto;
+}
+.section6 {
     background-color: #FFFFFF;
 }
 .header-image {
@@ -125,3 +144,134 @@ iframe {
 .section3 h2 {
     color: white;
 }
+
+#logo {
+  height: 100%;
+}
+
+  #map {
+    /* The box that will responsively resize */
+    position: relative;
+  }
+  #map img {
+    display: block;
+  }
+  #map .static {
+    /* The static image helps responsively resizing the bounding box correctly */ 
+    width: 100%;
+    height: auto;
+  }
+
+  #map .icon-box {
+    /* Placing the icons absolutely and with percentage values makes it responsive within the bounding box */
+    position: absolute;
+    width: 4vw;
+  }
+
+  #map .icon-box img {
+    width: 100%
+  }
+
+  #map .tooltip {
+    font-size: 0.8cqw;
+    color: white;
+    visibility: hidden;
+    margin-bottom: 5px;
+  }
+
+  #map .icon-box:hover {
+    background-color: #7D9883;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #map .icon-box:hover .tooltip {
+    visibility: visible;
+  }
+
+  #map .icon-box:hover .icon {
+    /* filter: invert(59%) sepia(13%) saturate(441%) hue-rotate(81deg) brightness(95%) contrast(93%); my green colour*/
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(313deg) brightness(104%) contrast(102%); 
+  }
+  
+  #map .church {
+    top: 62%;
+    left: 34%;
+  }
+
+  #map .reception {
+    top: 66%;
+    left: 36%;
+  }
+
+  #map .afterparty {
+    top: 26%;
+    left: 84%;
+  }
+
+  #map .mumshouse {
+    top: 36%;
+    left: 20%;
+  }
+
+  #map .ourhouse {
+    top: 51%;
+    left: 24%;
+  }
+
+  #map .whampthameslink {
+    top: 29%;
+    left: 28%;
+  }
+
+  #map .whampjubilee {
+    top: 39%;
+    left: 32.4%;
+  }
+
+  #map .gospeloak {
+    top: 26%;
+    left: 78%;
+  }
+
+  #map .kentishtown {
+    top: 27%;
+    left: 88%;
+  }
+
+  #map .greencroft {
+    top: 55%;
+    left: 38%;
+  }
+  
+  #menu {
+    display: none;
+    position: absolute;
+    background-color: #E2725B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    padding-top: 80px;
+    border-radius: 5px;
+  }
+  
+  #menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #menu a:hover {
+    background-color: #C65348;
+  }
+  
+  .header:hover #menu {
+    display: block;
+  }
+  #menu-button {
+    z-index: 10;
+  }
