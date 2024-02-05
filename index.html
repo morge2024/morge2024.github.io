@@ -118,7 +118,6 @@
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    console.log(entry, 'entry')
                     if (entry.isIntersecting) {
                         svgContainer.classList.add("is-visible");
                     } else {
@@ -129,6 +128,23 @@
 
             observer.observe(svgContainer);
         });
+
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById('menu');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+        var target = event.target;
+        if (!target.closest('.header')) {
+            var dropdownContent = document.getElementById('menu');
+            dropdownContent.style.display = 'none';
+        }
+});
     </script>
 </body>
 </html>
