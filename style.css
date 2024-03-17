@@ -78,9 +78,62 @@ iframe {
     background-color: #FFFFFF;
     min-height: auto;
 }
-.section6 {
-    background-color: #FFFFFF;
+.section5 {
+  background-color: #7D9883;
+  display: flex;
+  background-image: url('./assets/images/Dahlia.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 190%;
+  background-size: auto 55vh;
+  justify-content: space-around;
+  color: black;
 }
+
+.section5Text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.section5Text p {
+  padding-bottom: 30px;
+}
+
+.section6 {
+  background-color: #E2725B;
+  justify-content: space-evenly;
+}
+
+.section6 h2 {
+  color: white;
+}
+
+.section6 p {
+  padding: 10px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.section7 {
+    background-color: #FFFFFF;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.section7 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section7 .content h2 {
+  text-align: center;
+}
+
+.section6 li {
+  padding: 10px 0px;
+}
+
 .header-image {
     width: 100%;
     height: auto;
@@ -276,4 +329,31 @@ iframe {
   }
   #menu-button {
     z-index: 10;
+  }
+
+  .food {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .foodSection {
+    border-right: dashed white 1px;
+    padding: 0 20px;
+    width: 200px;
+  }
+
+  #orbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #orbox p {
+    padding: 0;
+  }
+
+  .line {
+    border-bottom: solid white 1px;
+    height: 10px;
+    width: 100%;
+    margin: 5px;
   }
