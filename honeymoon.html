@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeymoon</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="section header">
+        <a href="/" id="root-link">
+            <img src="./assets/images/Our logo.png" alt="Morge logo" id="logo">
+        </a>
+    </div>
+    <div class="section section8" id="Registry">
+        <h2>Honeymoon updates</h2>
+        <p>George and I are looking forward to going Inter-railing in Europe, something neither of us have done before.</p>
+        <div id="dahlia"></div>
+    </div>
+    <div class="section section3" id="Schedule">
+        <h2>Current plan</h2>
+        <p>10th September 2024 - Fly to Bolognia</p>
+        <p>12th September 2024 - Train to Venice</p>
+        <p>15th September 2024 - Train to Trieste</p>
+        <p>17th September 2024 - Train to Lake Bled</p>
+        <p>20th September 2024 - Train to Munich</p>
+        <p>24th September 2024 - Train to Prague</p>
+        <p>28th September 2024 - Fly home</p>
+    </div>
+    <div class="section section7" id="Insta">
+        <h2>Live Feed</h2>
+        <behold-widget feed-id="ES6ognjn5Jx8EY4ejSsM"></behold-widget>
+        <p>This feed connects to Millie's instagram account which she will be updating during the holiday</p>
+    </div>
+    <div class="section section9" id="Diary">
+        <h2>Holiday diary</h2>
+        <div id="diary-content">
+
+        </div>
+    </div>
+</body>
+<script>
+  if ('noModule' in HTMLScriptElement.prototype) {
+    const d=document,s=d.createElement('script');s.type='module';
+    s.src='https://w.behold.so/widget.js';d.body.appendChild(s);
+  }
+</script>
+<script>
+     function appendData(data){
+         var con=document.getElementById("diary-content")
+         for(let i=0;i<data.length;i++){
+            var c=document.createElement("div")
+            c.className="entry"
+             var d=document.createElement("h3")
+             d.textContent="Date: "+data[i].date
+             var t=document.createElement("p")
+             t.textContent=data[i].text
+             c.appendChild(d)
+             c.appendChild(t)
+             con.appendChild(c);
+         }
+      }
+
+      const diary = [
+        {
+            "date": "24/03/2024",
+            "text": "Honeymoon diary page created and ready for updates through our holiday!"
+        }
+    ]
+
+    appendData(diary);
+ </script>
+ 
+</html>
