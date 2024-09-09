@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George and Millie are getting married</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="section header">
+        <a href="#" id="root-link">
+            <img src="./assets/images/Our logo.png" alt="Morge logo" id="logo">
+        </a>
+        <a class="rsvp-btn" id="menu-button" onclick="toggleDropdown()" >Menu</a>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#Venue">Venue Address</a>
+            <a href="#Schedule">Schedule</a>
+            <a href="#Registry">Registry</a>
+            <a href="#Food">Food</a>
+            <a href="#RSVP">Other details</a>
+        </div>
+    </div>
+    <div class="section section1">
+        <h2>George and Millie are getting married</h2>
+        <h1>7th September 2024</h1>
+    </div>
+    <div class="section section2" id="Venue">
+        <h2>Venue details</h2>
+        <div class="fade-in-section">
+            <div class="svg-item">
+                <img src="./assets/images/Church 2.svg" alt="Church icon" class="icon">
+                <p class="svg-text">Ceremony at St Mary of All Souls, NW6 4SN </p>
+            </div>
+            <div class="svg-item">
+                <img src="./assets/images/Priory Hall.svg" alt="Priory Hall icon" class="icon">
+                <p class="svg-text">Reception at Priory Hall, NW6 4SN</p>
+            </div>
+            <div class="svg-item">
+                <img src="./assets/images/Never For Ever 2.svg" alt="Never for Ever icon" class="icon">
+                <p class="svg-text">After party at Never For Ever, NW5 1TL</p>
+            </div>
+        </div>
+    </div>
+    <div class="section section3" id="Schedule">
+        <div class="schedule">
+            <h2>Schedule</h2>
+            <p>12:30 - Guests arrive</p>
+            <p>13:00 - Ceremony</p>
+            <p>14:00 - Nibbles and Chat</p>
+            <p>15:30 - Wedding Breakfast</p>
+            <p>18.30 - First bus to the after party</p>
+            <p>19:10 - Second bus to the after party</p>
+            <p>20:00 - Smooth Sailors get the party started</p>
+            <p>00:00 - Carriages or Kebab</p>
+        </div>
+    </div>
+    <div class="section section4" id="section4">
+        <h2>Venue Map</h2>
+        <div id="map">
+            <img class="static" src="./assets/images/Map.png">
+            <div class="church icon-box">
+                <p class="tooltip">Ceremony</p>
+                <img class="icon" src="./assets/images/Church 2.svg">
+            </div>
+            <div class="reception icon-box">
+                <p class="tooltip">Reception</p>
+                <img class="icon" src="./assets/images/Priory Hall.svg">
+            </div>
+            <div class="afterparty icon-box">
+                <p class="tooltip">After Party</p>
+                <img class="icon" src="./assets/images/Never For Ever 2.svg">
+            </div>
+            <div class="mumshouse icon-box">
+                <p class="tooltip">Millie's Mum's House</p>
+                <p class="tooltip">Bride HQ</p>
+                <img class="icon" src="./assets/images/mums house.svg">
+            </div>
+            <div class="ourhouse icon-box">
+                <p class="tooltip">Our house</p>
+                <p class="tooltip">Groom HQ</p>
+                <img class="icon" src="./assets/images/our shop.svg">
+            </div>
+            <div class="whampthameslink icon-box">
+                <p class="tooltip">West Hampsead Thameslink</p>
+                <p class="tooltip">Trains to Brighton, St Pancras and St Albans</p>
+                <img class="icon" src="./assets/images/whamp Thames link.svg">
+            </div>
+            <div class="whampjubilee icon-box">
+                <p class="tooltip">West Hampsead Underground</p>
+                <p class="tooltip">Jubilee Line</p>
+                <img class="icon" src="./assets/images/whamp jubilee.svg">
+            </div>
+            <div class="gospeloak icon-box">
+                <p class="tooltip">Gospel Oak Overground</p>
+                <img class="icon" src="./assets/images/Gospel Oak.svg">
+            </div>
+            <div class="kentishtown icon-box">
+                <p class="tooltip">Kentish Town Thameslink</p>
+                <p class="tooltip">Trains to St Pancras and St Albans</p>
+                <img class="icon" src="./assets/images/Kentish Town.svg">
+            </div>
+            <div class="greencroft icon-box">
+                <p class="tooltip">Where we got engaged</p>
+                <img class="icon" src="./assets/images/Greencroft Gdns-2.svg">
+            </div>
+        </div>  
+    </div>
+    <div class="section section5" id="Registry">
+        <h2>Registry details</h2>
+        <p>We are all set up for our life together and very happy so there is no expectation of a contribution. If you would like to thank us for a lovely day out at our wedding we'd appreciate some help paying for our honeymoon.</p>
+        <p>If you'd rather not bring cash with you on the day, you can use the button below to send us money through a browser transaction to our Starling Bank account. There are no fees for the transaction</p>
+        <p>You can also view our <a href="/" class="inline-link">dedicated honeymoon page</a> to find out more about our plans and see updates while we're traveling</p>
+        <div id="dahlia">
+             <a href="https://settleup.starlingbank.com/millisandebathgeorgeandrew" target=”_blank” class="rsvp-btn">Contribute to our honeymoon</a>
+        </div>
+    </div>
+    <div class="section section6" id="Food">
+        <h2>Food</h2>
+        <div class="food">
+        <div id="nibbles" class="foodSection">
+            <h3>Nibbles</h3>
+            <ul>
+                <li>Tomato bruschetta*</li>
+                <li>Homemade buckwheat blinis with smoked salmon, cream cheese and chives</li>
+                <li>Parmesan, broadbean and mint tapenade</li>
+                <li>Honey and mustard cocktail sausages</li>
+                <li>Sweet potato and caramelised onion rolls*</li>
+                <li>Mini Yorkshire puddings with roast beef and horseradish cream*</li>
+            </ul>
+        </div>
+        <div id="starter" class="foodSection">
+            <h3>Starter: Mezze Platter for sharing</h3>
+            <ul>
+                <li>Bulgar Wheat, parsley, mint, fresh oregano, pistachio, cucumber, cherry tomato, pomegranate, sumac</li>
+                <li>Roasted red peppers & oregano</li>
+                <li>Tomato, mozzarella and basil with extra virgin olive oil.</li>
+                <li>Hot Falafel</li>
+                <li>Balsamic roasted onions</li>
+                <li>Hummus, Mutabal, Tzatziki - served with flatbreads*</li>
+            </ul>
+        </div>
+        <div id="maincourse" class="foodSection">
+            <h3>Main Course</h3>
+            <div class="options">
+                <ul>
+                    <li>Porchetta - Roast loin of pork with fennel salt & crackling, salsa verde</li>
+                </ul>
+                <div id="orbox">
+                    <div class="line"></div>
+                    <p id="or">or</p>
+                    <div class="line"></div>    
+                </div>
+            <ul>
+                <li>Roasted aubergine with tahini, almonds, cucumber yoghurt and cherry tomatoes</li>
+            </ul>
+             </div>
+        </div>
+        <div id="sides" class="foodSection">
+            <h3>Sides to share</h3>
+            <ul>
+                <li>Italian Roast new potatoes with Sorrento lemons, rosemary and garlic</li>
+                <li>Broccoli and green beans with chilli flakes and a garlic dressing</li>
+                <li>Butternut squash with pine nuts, tahini and za’atar</li>
+            </ul>
+        </div>
+        <div id="pudding" class="foodSection">
+            <h3>Pudding</h3>
+            <ul>
+                <li>Wedding cake</li>
+            </ul>
+        </div>
+        </div>
+        <p>* indicates that there is not a Gluten Free option available</p>
+        <p>Please indicate your main course preference on the RSVP form. There is also a section to share any dietary requirements. We are happy to work with our caterer to make sure you can fully enjoy our wedding breakfast!</p>
+    </div>
+    <div class="section section7" id="RSVP">
+        <div class="content">
+        <h2>Other important details</h2>
+        <ul>
+        <li>We will be using the email you provide in your form submission to keep you updated with relevant details closer to the event</li>
+        <li>Any urgent questions about the event you can contact morge2024@gmail.com</li>
+        <li>The dress code for the event is "Sunday best" but we won't be policing you. We want everyone to be comfortable and having fun!</li>
+        <li>We recommend using public transport to reach our venue (and make use of our wedding bus to go from the reception to the after party. West Hampstead Stations (overground, underground and national rail) is the closest station for the Ceremony and reception and for the after party Gospel Oak is the closest overground and Kentish Town is the closest underground and national rail service. If you would prefer to drive there is free roadside parking in adjacent streets</li>
+        </ul>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const svgContainer = document.querySelector(".fade-in-section");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        svgContainer.classList.add("is-visible");
+                    } else {
+                        svgContainer.classList.remove("is-visible");
+                    }
+                });
+            });
+
+            observer.observe(svgContainer);
+        });
+
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById('menu');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+        var target = event.target;
+        if (!target.closest('.header')) {
+            var dropdownContent = document.getElementById('menu');
+            dropdownContent.style.display = 'none';
+        }
+});
+    </script>
+</body>
+</html>
