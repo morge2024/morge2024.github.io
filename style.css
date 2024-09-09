@@ -116,6 +116,7 @@ iframe {
     background-color: #f9f5f2;
     color: black;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .section7 .content {
@@ -146,6 +147,7 @@ iframe {
   display: flex;
   justify-content: flex-start;
   color: black;
+  padding: 10px;
 }
 
 .header-image {
